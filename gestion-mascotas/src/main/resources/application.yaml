@@ -1,3 +1,21 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: gestion-mascotas
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mascotas_db
+    username: postgres
+    password: tu_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
