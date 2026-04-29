@@ -1,5 +1,10 @@
 package com.sanosysalvos.gestion_mascotas.service;
 
-public class ReporteService {
 
+
+import com.sanosysalvos.gestion_mascotas.model.dto.ReporteRequest;
+import com.sanosysalvos.gestion_mascotas.model.dto.ReporteResponse;
+
+public interface ReporteService {
+    ReporteResponse crearReporte(ReporteRequest request);
 }
